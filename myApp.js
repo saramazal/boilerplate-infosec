@@ -5,6 +5,7 @@ let helmet = require('helmet');
 
 app.use(helmet.hidePoweredBy());
 app.use(helmet.frameguard({action: 'deny'})); 
+<<<<<<< HEAD
 app.use(helmet.xssFilter({}));
 app.use(helmet.noSniff());
 app.use(helmet.ieNoOpen());
@@ -15,6 +16,8 @@ app.use(helmet.noCache());
 app.use(helmet.contentSecurityPolicy({ directives: { defaultSrc: ["'self'"], scriptSrc: ["'self'", "trusted-cdn.com"] }} ))
 
 
+=======
+>>>>>>> 4cdb257f7da51ae4f7bfcebb0e18efb6e1bd2707
 
 
 
