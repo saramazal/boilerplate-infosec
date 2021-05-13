@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
 
+let helmet = require('helmet');
+
+app.use(helmet.hidePoweredBy());
+
 
 
 
